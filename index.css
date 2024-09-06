@@ -53,17 +53,14 @@ h1 .secondColor {
   font-family: "Inter", sans-serif;
   color: white;
   font-weight: 500;
+  transition: background-color 0.3s ease;
   line-height: 24px;
 }
 
-#passwordContainer {
-  width: 446px;
-  border-top: 1px solid #2f3e53;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+#generatePasswordBtn:hover {
+  background-color: #005539;
+  color: white;
 }
-
 .passwordPlaceholder {
   margin-top: 30px;
   width: 211px;
@@ -75,4 +72,84 @@ h1 .secondColor {
 
   font-family: "Inter", sans-serif;
   font-weight: 500;
+}
+
+#passwordContainer {
+  display: flex;
+  flex-direction: row; /* Mantiene los placeholders uno al lado del otro */
+  justify-content: space-between;
+  width: 100%;
+  border-top: 1px solid #2f3e53;
+  margin-top: 20px;
+}
+
+.password-item {
+  display: flex;
+  flex-direction: column; /* Coloca el botón debajo del placeholder */
+  align-items: center;
+}
+
+.passwordPlaceholder {
+  margin-top: 30px;
+  width: 211px;
+  height: 39px;
+  border-radius: 6px;
+  background-color: #273549;
+  color: #55f991;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  margin-bottom: 10px; /* Espacio entre el placeholder y el botón */
+}
+
+.copy-btn {
+  display: inline-flex;
+  align-items: center;
+  background-color: #10b981;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  outline: none;
+  width: 211px; /* Ajusta el ancho del botón para que coincida con el placeholder */
+}
+
+.copy-btn i {
+  margin-right: 8px;
+}
+
+.copy-btn:hover {
+  background-color: #005539;
+}
+
+.copy-btn:active {
+  background-color: #005539;
+}
+
+/* Estilos personalizados para SweetAlert2 */
+.my-swal-container {
+  background-color: #0000008e !important; /* Fondo del contenedor */
+}
+
+.my-swal-popup {
+  background-color: #0d1624 !important; /* Fondo del modal */
+  color: white !important; /* Color del texto */
+  border-radius: 10px !important; /* Radio de borde opcional para estilizar */
+}
+
+.my-swal-title,
+.my-swal-content {
+  color: white !important; /* Color del texto en el título y contenido */
+}
+
+.my-swal-confirm-button {
+  background-color: #10b981 !important; /* Color de fondo del botón */
+  color: white !important; /* Color del texto del botón */
+}
+
+.my-swal-confirm-button:hover {
+  background-color: #005539 !important; /* Color de fondo al pasar el cursor */
 }
