@@ -1,0 +1,79 @@
+.karla-font {
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+
+  font-style: normal;
+}
+
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+body {
+    background-color: #1F2937;
+    color: white;
+    width: 550px;
+    height: 550px;
+    margin: auto;
+}
+
+.container{
+      font-family: "Inter", sans-serif;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 28px;
+}
+
+
+h1{
+    align-items: flex-start;
+    font-family: "Karla", sans-serif;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: -2.5%;
+      font-weight: 800;
+}
+
+h1 .secondColor{
+    align-items: flex-start;
+    color: #10B981;
+      font-weight: 800;
+
+    
+}
+
+#generatePasswordBtn{
+      padding:9px 17px 9px 15px;
+    background-color: #10B981;
+    border:0px;
+    border-radius: 6px;
+  font-family: "Inter", sans-serif;
+    color: white;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+#passwordContainer{
+    width: 446px;
+    border-top:1px solid #2F3E53;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.passwordPlaceholder{
+    margin-top:30px;
+    width: 211px;
+    height: 39px;
+    border-radius: 6px;
+    background-color: #273549;
+    color:#55F991;
+    text-align: center;
+    
+      font-family: "Inter", sans-serif;
+    font-weight: 500;
+    
+
+}
